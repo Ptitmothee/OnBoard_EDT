@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OnBoard EDT</string>
+    <string name="nom_vue_liste_salles">Liste des salles</string>
 </resources>
