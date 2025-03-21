@@ -1,0 +1,101 @@
+{
+  "salles_recherchees": ["AMPHI_BOO8", "AMPHI_E", "AMPHI_L"], 
+  "emplois_du_temps": [
+    {
+      "salle": "AMPHI_BOO8",
+      "reservations": [
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["M1"],
+          "enseignant": "M. Dupont",
+          "matiere": "PRO2", 
+          "type": "CM",
+          "nombre_eleves": 30
+        },
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["M4"],
+          "enseignant": "M. Dupont",
+          "matiere": "PRO2", 
+          "type": "TD",
+          "nombre_eleves": 30
+        },
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["S1", "S2"],
+          "enseignant": "M. Dupont",
+          "matiere": "PRO2", 
+          "type": "TD",
+          "nombre_eleves": 30
+        }
+      ]
+    },
+    {
+      "salle": "AMPHI_E",
+      "reservations": [
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["M1"],
+          "enseignant": "Mme Leroy",
+          "matiere": "MATHAPP", 
+          "type": "CM",
+          "nombre_eleves": 25
+        },
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["S1"],
+          "enseignant": "M. Laraie",
+          "matiere": "SYRES", 
+          "type": "CM",
+          "nombre_eleves": 25
+        },
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["S2"],
+          "enseignant": "M. Bob",
+          "matiere": "SYSIN", 
+          "type": "TD",
+          "nombre_eleves": 25
+        },
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["S3", "S4"],
+          "enseignant": "M. Envie",
+          "matiere": "Conférence climat", 
+          "type": "CM",
+          "nombre_eleves": -1
+        }
+      ]
+    },
+    {
+      "salle": "AMPHI_L",
+      "reservations": [
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["S1", "S2"],
+          "enseignant": "M. Guation",
+          "matiere": "APP_MANAG", 
+          "type": "CM",
+          "nombre_eleves": 30
+        },
+        {
+          "jour": "Mardi",
+          "semaine": 12,
+          "creneaux": ["S5", "S6"],
+          "enseignant": "M. Guation",
+          "matiere": "Représentation LABO", 
+          "type": "Autre",
+          "nombre_eleves": -1
+        }
+      ]
+    }
+  ]
+}
