@@ -20,13 +20,13 @@ fun EDTTable(viewModel: EDTViewModel) {
 
     val filteredReservations = reservations.filter { it.jour == selectedDay && it.semaine == currentWeek }
     val salles = filteredReservations.map { it.salle }.distinct()
+    val horairesAvecReservations = horaires.filter { creneau -> filteredReservations.any { it.creneau == creneau } }
 
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp)
     ) {
-        // Header avec noms des salles
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -47,14 +47,12 @@ fun EDTTable(viewModel: EDTViewModel) {
             }
         }
 
-        // Affichage des créneaux horaires et réservations
-        horaires.forEach { creneau ->
+        horairesAvecReservations.forEach { creneau ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 2.dp)
             ) {
-                // Colonne des créneaux horaires
                 Text(
                     text = creneau,
                     modifier = Modifier
@@ -64,13 +62,13 @@ fun EDTTable(viewModel: EDTViewModel) {
                 )
 
                 salles.forEach { salle ->
-                    val res = filteredReservations.find { it.salle == salle && it.creneaux.contains(creneau) }
+                    val res = filteredReservations.find { it.salle == salle && it.creneau == creneau }
 
                     if (res != null) {
                         Box(
                             modifier = Modifier
                                 .weight(1f)
-                                .height((res.creneaux.size * 40).dp)
+                                .height(60.dp)
                                 .background(Color.LightGray, shape = RoundedCornerShape(4.dp))
                                 .padding(8.dp),
                             contentAlignment = Alignment.Center

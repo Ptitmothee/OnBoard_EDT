@@ -13,7 +13,7 @@ fun RoomsSelected(viewModel: EDTViewModel) {
 
     Text(
         text = "Salles : ${salles.joinToString(", ")}",
-        style = MaterialTheme.typography.titleMedium, // Replaces subtitle1
+        style = MaterialTheme.typography.titleMedium,
         modifier = Modifier.padding(vertical = 8.dp)
     )
 }

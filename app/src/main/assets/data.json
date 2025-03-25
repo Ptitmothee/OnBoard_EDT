@@ -1,35 +1,88 @@
 {
-  "salles_recherchees": ["AMPHI_BOO8", "AMPHI_E", "AMPHI_L"], 
+  "salles_recherchees": ["AMPHI_BOO8", "AMPHI_E", "AMPHI_L"],
   "emplois_du_temps": [
     {
       "salle": "AMPHI_BOO8",
       "reservations": [
         {
+          "id": 1,
+          "jour": "Lundi",
+          "semaine": 13,
+          "creneau": "M1",
+          "enseignant": "M. Martin",
+          "matiere": "Algorithmique",
+          "type": "CM",
+          "nombre_eleves": 32
+        },
+        {
+          "id": 2,
+          "jour": "Lundi",
+          "semaine": 13,
+          "creneau": "M4",
+          "enseignant": "Mme Rousseau",
+          "matiere": "Réseaux",
+          "type": "TD",
+          "nombre_eleves": 28
+        },
+        {
+          "id": 3,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["M1"],
+          "semaine": 13,
+          "creneau": "M1",
           "enseignant": "M. Dupont",
-          "matiere": "PRO2", 
+          "matiere": "PRO2",
           "type": "CM",
           "nombre_eleves": 30
         },
         {
+          "id": 4,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["M4"],
+          "semaine": 13,
+          "creneau": "M4",
           "enseignant": "M. Dupont",
-          "matiere": "PRO2", 
+          "matiere": "PRO2",
           "type": "TD",
           "nombre_eleves": 30
         },
         {
+          "id": 5,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["S1", "S2"],
+          "semaine": 13,
+          "creneau": "S2",
           "enseignant": "M. Dupont",
-          "matiere": "PRO2", 
+          "matiere": "PRO2",
           "type": "TD",
           "nombre_eleves": 30
+        },
+        {
+          "id": 6,
+          "jour": "Mercredi",
+          "semaine": 13,
+          "creneau": "M2",
+          "enseignant": "Mme Lefevre",
+          "matiere": "Systèmes Embarqués",
+          "type": "CM",
+          "nombre_eleves": 25
+        },
+        {
+          "id": 7,
+          "jour": "Jeudi",
+          "semaine": 13,
+          "creneau": "S1",
+          "enseignant": "M. Dubois",
+          "matiere": "Cybersécurité",
+          "type": "TD",
+          "nombre_eleves": 26
+        },
+        {
+          "id": 8,
+          "jour": "Vendredi",
+          "semaine": 13,
+          "creneau": "M3",
+          "enseignant": "Mme Petit",
+          "matiere": "Intelligence Artificielle",
+          "type": "CM",
+          "nombre_eleves": 35
         }
       ]
     },
@@ -37,40 +90,94 @@
       "salle": "AMPHI_E",
       "reservations": [
         {
+          "id": 9,
+          "jour": "Lundi",
+          "semaine": 13,
+          "creneau": "S2",
+          "enseignant": "M. Leroux",
+          "matiere": "Statistiques",
+          "type": "CM",
+          "nombre_eleves": 30
+        },
+        {
+          "id": 10,
+          "jour": "Lundi",
+          "semaine": 13,
+          "creneau": "S4",
+          "enseignant": "Mme Simon",
+          "matiere": "Économie Numérique",
+          "type": "TD",
+          "nombre_eleves": 27
+        },
+        {
+          "id": 11,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["M1"],
+          "semaine": 13,
+          "creneau": "M1",
           "enseignant": "Mme Leroy",
-          "matiere": "MATHAPP", 
+          "matiere": "MATHAPP",
           "type": "CM",
           "nombre_eleves": 25
         },
         {
+          "id": 12,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["S1"],
+          "semaine": 13,
+          "creneau": "S1",
           "enseignant": "M. Laraie",
-          "matiere": "SYRES", 
+          "matiere": "SYRES",
           "type": "CM",
           "nombre_eleves": 25
         },
         {
+          "id": 13,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["S2"],
+          "semaine": 13,
+          "creneau": "S2",
           "enseignant": "M. Bob",
-          "matiere": "SYSIN", 
+          "matiere": "SYSIN",
           "type": "TD",
           "nombre_eleves": 25
         },
         {
+          "id": 14,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["S3", "S4"],
+          "semaine": 13,
+          "creneau": "S3",
           "enseignant": "M. Envie",
-          "matiere": "Conférence climat", 
+          "matiere": "Conférence climat",
           "type": "CM",
           "nombre_eleves": -1
+        },
+        {
+          "id": 15,
+          "jour": "Mercredi",
+          "semaine": 13,
+          "creneau": "M4",
+          "enseignant": "M. Laurent",
+          "matiere": "Développement Web",
+          "type": "TD",
+          "nombre_eleves": 28
+        },
+        {
+          "id": 16,
+          "jour": "Jeudi",
+          "semaine": 13,
+          "creneau": "S5",
+          "enseignant": "Mme Moreau",
+          "matiere": "Gestion de Projet",
+          "type": "CM",
+          "nombre_eleves": 32
+        },
+        {
+          "id": 17,
+          "jour": "Vendredi",
+          "semaine": 13,
+          "creneau": "S2",
+          "enseignant": "M. Clement",
+          "matiere": "Cloud Computing",
+          "type": "CM",
+          "nombre_eleves": 29
         }
       ]
     },
@@ -78,22 +185,74 @@
       "salle": "AMPHI_L",
       "reservations": [
         {
+          "id": 18,
+          "jour": "Lundi",
+          "semaine": 13,
+          "creneau": "M3",
+          "enseignant": "Mme Garcia",
+          "matiere": "Communication",
+          "type": "CM",
+          "nombre_eleves": 26
+        },
+        {
+          "id": 19,
+          "jour": "Lundi",
+          "semaine": 13,
+          "creneau": "S3",
+          "enseignant": "M. Rodriguez",
+          "matiere": "Marketing Digital",
+          "type": "TD",
+          "nombre_eleves": 24
+        },
+        {
+          "id": 20,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["S1", "S2"],
+          "semaine": 13,
+          "creneau": "S1",
           "enseignant": "M. Guation",
-          "matiere": "APP_MANAG", 
+          "matiere": "APP_MANAG",
           "type": "CM",
           "nombre_eleves": 30
         },
         {
+          "id": 21,
           "jour": "Mardi",
-          "semaine": 12,
-          "creneaux": ["S5", "S6"],
+          "semaine": 13,
+          "creneau": "S5",
           "enseignant": "M. Guation",
-          "matiere": "Représentation LABO", 
+          "matiere": "Représentation LABO",
           "type": "Autre",
           "nombre_eleves": -1
+        },
+        {
+          "id": 22,
+          "jour": "Mercredi",
+          "semaine": 13,
+          "creneau": "S1",
+          "enseignant": "Mme Bernard",
+          "matiere": "Stratégie d'Entreprise",
+          "type": "CM",
+          "nombre_eleves": 28
+        },
+        {
+          "id": 23,
+          "jour": "Jeudi",
+          "semaine": 13,
+          "creneau": "M2",
+          "enseignant": "M. Thomas",
+          "matiere": "Innovation Technologique",
+          "type": "CM",
+          "nombre_eleves": 27
+        },
+        {
+          "id": 24,
+          "jour": "Vendredi",
+          "semaine": 13,
+          "creneau": "M1",
+          "enseignant": "Mme Martinez",
+          "matiere": "Entrepreneuriat",
+          "type": "TD",
+          "nombre_eleves": 25
         }
       ]
     }

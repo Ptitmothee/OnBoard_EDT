@@ -14,19 +14,16 @@ import java.time.temporal.WeekFields
 import java.util.Locale
 
 class EDTViewModel(application: Application) : AndroidViewModel(application) {
-    // Semaine sélectionnée
+
     private val _currentWeek = MutableStateFlow(getCurrentWeek())
     val currentWeek = _currentWeek.asStateFlow()
 
-    // Jour sélectionné
     private val _selectedDay = MutableStateFlow("Mardi")
     val selectedDay = _selectedDay.asStateFlow()
 
-    // Liste des salles
     private val _sallesRecherchees = MutableStateFlow(listOf<String>())
     val sallesRecherchees = _sallesRecherchees.asStateFlow()
 
-    // Liste des réservations
     private val _reservations = MutableStateFlow<List<Reservation>>(emptyList())
     val reservations = _reservations.asStateFlow()
 
@@ -78,8 +75,6 @@ class EDTViewModel(application: Application) : AndroidViewModel(application) {
     }
 }
 
-// Modèle JSON
-
 data class EmploiDuTemps(
     val salles_recherchees: List<String>,
     val emplois_du_temps: List<Salle>
@@ -91,10 +86,11 @@ data class Salle(
 )
 
 data class Reservation(
+    val id: Int,
     val jour: String,
     val semaine: Int,
     val salle: String,
-    val creneaux: List<String>,
+    val creneau: String,
     val enseignant: String,
     val matiere: String,
     val type: String,

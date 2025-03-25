@@ -16,16 +16,9 @@ fun EDTScreen(
     viewModel: EDTViewModel
 ) {
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        // Sélecteur de semaine
         WeekSelector(viewModel)
-
-        // Sélecteur de jours
         DaySelector(viewModel)
-
-        // Salles recherchées
         RoomsSelected(viewModel)
-
-        // Tableau de l'emploi du temps
         EDTTable(viewModel)
     }
 }

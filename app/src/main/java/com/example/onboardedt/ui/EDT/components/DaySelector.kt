@@ -16,10 +16,9 @@ import com.example.onboardedt.ui.EDT.EDTViewModel
 @Composable
 fun DaySelector(viewModel: EDTViewModel) {
     val selectedDay by viewModel.selectedDay.collectAsState()
-    val days = listOf("Lun", "Mar", "Mer", "Jeu", "Ven") // Jours abrégés
+    val days = listOf("Lun", "Mar", "Mer", "Jeu", "Ven")
     val currentWeek by viewModel.currentWeek.collectAsState()
 
-    // Mapping inverse : permet de convertir "Lundi" → "Lun", "Mardi" → "Ma", etc.
     val dayMappingInverse = mapOf(
         "Lundi" to "Lun",
         "Mardi" to "Mar",
@@ -28,7 +27,7 @@ fun DaySelector(viewModel: EDTViewModel) {
         "Vendredi" to "Ven"
     )
 
-    val selectedShortDay = dayMappingInverse[selectedDay] // Récupère l'abréviation du jour sélectionné
+    val selectedShortDay = dayMappingInverse[selectedDay]
 
     Row(
         modifier = Modifier.fillMaxWidth(),
@@ -46,9 +45,9 @@ fun DaySelector(viewModel: EDTViewModel) {
                         containerColor = if (day == selectedShortDay) MaterialTheme.colorScheme.primary else Color.Gray
                     ),
                     shape = CircleShape,
-                    contentPadding = PaddingValues(0.dp), // Supprime le padding interne du bouton
+                    contentPadding = PaddingValues(0.dp),
                     modifier = Modifier
-                        .size(60.dp) // Taille du bouton
+                        .size(60.dp)
                         .clip(CircleShape)
                 ) {
                     Text(
@@ -60,7 +59,6 @@ fun DaySelector(viewModel: EDTViewModel) {
                     )
                 }
 
-                // Affichage du numéro du jour
                 Text(
                     text = dayNumber.toString(),
                     fontSize = 12.sp,

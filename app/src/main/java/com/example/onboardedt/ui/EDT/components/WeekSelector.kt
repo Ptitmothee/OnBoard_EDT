@@ -23,7 +23,7 @@ fun WeekSelector(viewModel: EDTViewModel) {
         IconButton(onClick = { viewModel.changeWeek(-1) }) {
             Icon(Icons.Filled.ArrowBack, contentDescription = "Semaine précédente")
         }
-        Text(text = "Semaine $currentWeek", style = MaterialTheme.typography.titleLarge) // Changed h6 -> titleLarge
+        Text(text = "Semaine $currentWeek", style = MaterialTheme.typography.titleLarge)
         IconButton(onClick = { viewModel.changeWeek(1) }) {
             Icon(Icons.Filled.ArrowForward, contentDescription = "Semaine suivante")
         }
